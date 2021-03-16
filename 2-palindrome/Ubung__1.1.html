@@ -8,9 +8,22 @@
 
     <script>
       "use Strict";
+      // My Choosed word to chcek "Regallager"
 
-      
-
+      let UserInputText = prompt(
+        "Please Enter your Text to check for palindromes"
+      );
+      console.log(UserInputText);
+      let UserInputTextEven = UserInputText.toLowerCase();
+      let RotatedUserInputEvenText = UserInputTextEven.split("")
+        .reverse()
+        .join("");
+      console.log(RotatedUserInputEvenText);
+      if (RotatedUserInputEvenText == UserInputTextEven) {
+        console.log("It is palindromes");
+      } else {
+        console.log("OOps!! You made a Wrong Choice!!");
+      }
     </script>
   </head>
   <body></body>
