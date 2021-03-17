@@ -6,7 +6,27 @@
     <title>Document</title>
     <script>
       "use Strict";
-     
+      let UserInput = prompt("Bitte geben Sie ein Text");
+      console.log(UserInput);
+      //case cancel return null
+      //case text enter return true
+      //case empty return '' string
+
+      switch (UserInput) {
+        case null:
+          console.log("you canceled");
+          confirm("Are you sure you want to cancel?");
+          break;
+        case "":
+          console.log("you did not enter anything");
+          break;
+
+        default:
+          break;
+      }
+      if (UserInput) {
+        console.log("you entered some text");
+      }
     </script>
   </head>
   <body></body>

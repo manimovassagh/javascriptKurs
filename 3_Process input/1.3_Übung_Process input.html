@@ -6,7 +6,29 @@
     <title>Document</title>
     <script>
       "use Strict";
-     
+      let UserInput = prompt(
+        "Bitte geben Sie ein Text (Mehr als 10 Charachter)"
+      );
+      if (UserInput.length > 10) {
+        switch (UserInput) {
+          case null:
+            console.log("you canceled");
+            confirm("Are you sure you want to cancel?");
+            break;
+          case "":
+            console.log("you did not enter anything");
+            break;
+
+          default:
+            break;
+        }
+        if (UserInput) {
+          console.log(UserInput);
+          console.log("you entered some text");
+        }
+      } else {
+        console.log("Your text is too short");
+      }
     </script>
   </head>
   <body></body>
