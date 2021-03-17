@@ -1,0 +1,39 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      "use Strict";
+      let UserInput = prompt("Bitte geben Sie ein Text");
+      console.log(UserInput);
+      //case cancel return null
+      //case text enter return true
+      //case empty return '' string
+
+      switch (UserInput) {
+        case null:
+          console.log("you canceled");
+          confirm("Are you sure you want to cancel?");
+          break;
+        case "":
+          console.log("you did not enter anything");
+          break;
+        case true:
+          console.log("you entered some text");
+          break;
+
+        default:
+          break;
+      }
+
+      /*if (!UserInput) {
+        console.log("you did not enter anything");
+      } else if (UserInput === null) {
+        console.log("you canceled");
+      }*/
+    </script>
+  </head>
+  <body></body>
+</html>
