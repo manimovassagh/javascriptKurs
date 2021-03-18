@@ -1,0 +1,25 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      "use Strict";
+      //generate 100 random numbers
+      // first generate one randome
+      let counter = 0;
+      let myRandomNumber = ~~(Math.random() * 100);
+      //generate 100 randome
+      for (i = 0; i < 100; i++) {
+        let myRandomNumber = ~~(Math.random() * 100);
+        console.log(myRandomNumber);
+        if (myRandomNumber > 75) {
+          counter = counter + 1;
+          console.log(`you have ${counter} Numbers over 75`);
+        }
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
