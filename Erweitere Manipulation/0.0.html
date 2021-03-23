@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Titel</title>
+    <style></style>
+
+    <script>
+      "use strict";
+
+      const ShuffleArray = () => {};
+      let myArray = [];
+
+      let i = 0;
+      while (i < 100) {
+        i++;
+        myArray.push(i);
+      }
+
+      //lösung  generate i in for loop and change it with randome number
+      for (let i = 0; i < myArray.length; i++) {
+        let z = ~~(Math.random() * myArray.length);
+        [myArray[i], myArray[z]] = [myArray[z], myArray[i]];
+      }
+      console.log(myArray.join(","));
+      console.log(myArray);
+    </script>
+  </head>
+  <body></body>
+</html>
